@@ -29,6 +29,12 @@ Suggestotron::Application.routes.draw do
   #     end
   #   end
 
+  resources :topics do
+    member do
+      post 'upvote'
+    end
+  end
+
   # Example resource route with sub-resources:
   #   resources :products do
   #     resources :comments, :sales
