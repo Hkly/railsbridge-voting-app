@@ -1,3 +1,0 @@
-== README
-
-This is my test app following the RailsBridge Intro to Rails tutorial.
