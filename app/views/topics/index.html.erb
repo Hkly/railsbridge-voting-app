@@ -15,8 +15,8 @@
       <tr>
         <td><%= link_to topic.title, topic %></td>
         <td><%= pluralize(topic.votes.count, "vote") %></td>
-        <td><%= button_to '+1', upvote_topic_path(topic), method: :post %></td>
-        <td><%= button_to '-1', downvote_topic_path(topic), method: :post%></td>
+        <td><%= button_to '+1', upvote_topic_path(topic), method: :post , class: "btn btn-primary"%></td>
+        <td><%= button_to '-1', downvote_topic_path(topic), method: :post, class: "btn btn-primary"%></td>
       </tr>
     <% end %>
   </tbody>
